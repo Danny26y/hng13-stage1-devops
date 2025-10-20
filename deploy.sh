@@ -99,7 +99,7 @@ done
 # ---------------------- interactive prompts if missing ----------------------
 prompt_if_missing() {
   varname="$1"; prompt="$2"; default="$3"
-  eval val="\"\\${$varname}\""
+  eval val="\""${!varname}"""
   if [ -z "$val" ] && [ "$NONINTERACTIVE" -ne 1 ]; then
     if [ -n "$default" ]; then
       read -p "$prompt [$default]: " tmp; tmp="${tmp:-$default}"
