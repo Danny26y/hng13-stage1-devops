@@ -27,7 +27,7 @@
 #
 # QUICK USAGE (flags):
 #   ./deploy.sh \
-#     --repo "https://github.com/Danny26y/hng13-stage1-devops.git" \
+#     --repo "https://github.com/Username/repo.git" \
 #     --pat "ghp_xxx" \
 #     --branch "main" \
 #     --user ubuntu \
